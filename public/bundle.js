@@ -23640,7 +23640,7 @@
 	        value: function componentWillMount() {
 	            var _this = this;
 
-	            this.socket = (0, _socketIoClient2['default'])('http://localhost:3000');
+	            this.socket = (0, _socketIoClient2['default'])('http://localhost:2003');
 
 	            this.socket.on('connect', function () {
 
@@ -31154,6 +31154,8 @@
 
 	var React = __webpack_require__(1);
 	var Display = __webpack_require__(251);
+	var Router = __webpack_require__(157);
+	var Link = Router.Link;
 
 	var Ask = React.createClass({
 		displayName: 'Ask',
@@ -31223,6 +31225,11 @@
 						'p',
 						null,
 						this.props.question[this.state.answer]
+					),
+					React.createElement(
+						Link,
+						{ to: "/board" },
+						'View the board'
 					)
 				),
 				React.createElement(

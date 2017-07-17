@@ -18,7 +18,7 @@ var results = {
 app.use(express.static('./public'));
 app.use(express.static('./node_modules/bootstrap/dist'));
 
-var server = app.listen(23);
+var server = app.listen(2003);
 var io = require('socket.io').listen(server);
 
 io.sockets.on('connection', function (socket) {
@@ -91,4 +91,4 @@ io.sockets.on('connection', function (socket) {
     console.log("Connected: %s sockets connected.", connections.length);
 });
 
-console.log("Polling server is running at 'http://localhost:23'");
+console.log("Polling server is running at 'http://localhost:2003'");

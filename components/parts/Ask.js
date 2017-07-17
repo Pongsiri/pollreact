@@ -1,5 +1,7 @@
 var React = require('react');
 var Display = require('./Display');
+var Router = require('react-router');
+var Link = Router.Link;
 
 var Ask = React.createClass({
 
@@ -56,6 +58,7 @@ var Ask = React.createClass({
 				<Display if={this.state.answer}>
 					<h3>You answered: {this.state.answer}</h3>
 					<p>{this.props.question[this.state.answer]}</p>
+					<Link to="/board">View the board</Link>
 				</Display>
 
 				<Display if={!this.state.answer}>
