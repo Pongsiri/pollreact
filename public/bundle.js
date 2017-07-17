@@ -31061,7 +31061,7 @@
 						React.createElement(
 							'h1',
 							null,
-							'รวมลงคะแนน(session)'
+							'ร่วมลงคะแนน(session)'
 						),
 						React.createElement(Join, { emit: this.props.emit })
 					)
@@ -31122,7 +31122,7 @@
 				),
 				React.createElement('input', { ref: "name",
 					className: "form-control",
-					placeholder: "ใส่ชื่อที่ต้องการ....",
+					placeholder: "ชื่อของคุณ",
 					required: true }),
 				React.createElement(
 					'button',
@@ -31132,7 +31132,7 @@
 				React.createElement(
 					Link,
 					{ to: "/speaker" },
-					'เมนูสำหรับผูกำหนดหัวข้อ'
+					'เมนูสำหรับผู้กำหนดหัวข้อ'
 				),
 				React.createElement(
 					Link,

@@ -22,7 +22,7 @@ class APP extends React.Component {
     }
 
     componentWillMount() {
-        this.socket = io('http://188.166.230.105:2003');
+        this.socket = io('http://http://188.166.230.105:2003');
         
         this.socket.on('connect', () => {
 
