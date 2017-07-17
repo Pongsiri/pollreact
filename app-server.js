@@ -34,7 +34,7 @@ io.sockets.on('connection', function (socket) {
 		} else if (this.id === speaker.id) {
 			console.log("%s has left. '%s' is over.", speaker.name, title);
 			speaker = {};
-			title = "Untitled Presentation";
+			title = "ยังไม่ได้กำหนดหัวข้อการลงคะแนน";
 			io.sockets.emit('end', { title: title, speaker: '' });
 		}
 

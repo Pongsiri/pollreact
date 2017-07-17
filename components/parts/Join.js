@@ -12,14 +12,14 @@ var Join = React.createClass({
 		return (
 			<form action="javascript:void(0)" onSubmit={this.join}>
 
-				<label>Full Name</label>
+				<label>ใส่ชื่อ.....</label>
 				<input ref="name"
 					   className="form-control"
-				       placeholder="enter your full name..."
+				       placeholder="ชื่อของคุณ"
 				       required />
-				<button className="btn btn-primary">Join</button>
-				<Link to="/speaker">Start the presentation</Link>
-				<Link to="/board">Go to the board</Link>
+				<button className="btn btn-primary">ร่วมลงคะแนน</button>
+				<Link to="/speaker">เมนูสำหรับผู้กำหนดหัวข้อ</Link>
+				<Link to="/board">ผลรวมคะแนน</Link>
 			</form>
 		);
 	}

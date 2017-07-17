@@ -21,7 +21,7 @@ var JoinSpeaker = React.createClass({
 				<label>Presentation Title</label>
 				<input ref="title"
 					   className="form-control"
-				       placeholder="enter a title for this Presentation..."
+				       placeholder="enter a title for this Poll.."
 				       required />
 
 				<button className="btn btn-primary">Join</button>

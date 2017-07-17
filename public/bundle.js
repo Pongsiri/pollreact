@@ -31034,7 +31034,7 @@
 							React.createElement(
 								'h2',
 								null,
-								'Welcome ',
+								'ยินดีต้อนรับ ',
 								this.props.member.name
 							),
 							React.createElement(
@@ -31046,7 +31046,7 @@
 							React.createElement(
 								'p',
 								null,
-								'Questions will appear here.'
+								'คำถามจะปรากฏที่นี่'
 							)
 						),
 						React.createElement(
@@ -31061,7 +31061,7 @@
 						React.createElement(
 							'h1',
 							null,
-							'Join the session'
+							'รวมลงคะแนน(session)'
 						),
 						React.createElement(Join, { emit: this.props.emit })
 					)
@@ -31118,26 +31118,26 @@
 				React.createElement(
 					'label',
 					null,
-					'Full Name'
+					'ใส่ชื่อ.....'
 				),
 				React.createElement('input', { ref: "name",
 					className: "form-control",
-					placeholder: "enter your full name...",
+					placeholder: "ใส่ชื่อที่ต้องการ....",
 					required: true }),
 				React.createElement(
 					'button',
 					{ className: "btn btn-primary" },
-					'Join'
+					'ร่วมลงคะแนน'
 				),
 				React.createElement(
 					Link,
 					{ to: "/speaker" },
-					'Start the presentation'
+					'เมนูสำหรับผูกำหนดหัวข้อ'
 				),
 				React.createElement(
 					Link,
 					{ to: "/board" },
-					'Go to the board'
+					'ผลรวมคะแนน'
 				)
 			);
 		}
@@ -31370,7 +31370,7 @@
 				),
 				React.createElement('input', { ref: "title",
 					className: "form-control",
-					placeholder: "enter a title for this Presentation...",
+					placeholder: "enter a title for this Poll..",
 					required: true }),
 				React.createElement(
 					'button',
@@ -31489,7 +31489,7 @@
 				React.createElement(
 					'h2',
 					null,
-					'Questions'
+					'คำถาม'
 				),
 				this.props.questions.map(this.addQuestion)
 			);
