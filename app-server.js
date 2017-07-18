@@ -65,7 +65,7 @@ io.sockets.on('connection', function (socket) {
 
 	socket.on('ask', function(question) {
 		currentQuestion = question;
-		results = {a:0, b:0, c:0, d:0};
+		results = {ko:0, jos:0,};
 		io.sockets.emit('ask', currentQuestion);
 		console.log("Question Asked: '%s'", question.q);
 	});
