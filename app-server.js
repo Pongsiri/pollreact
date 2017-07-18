@@ -9,10 +9,8 @@ var speaker = {};
 var questions = require('./app-questions');
 var currentQuestion = false;
 var results = {
-	a: 0,
-	b: 0,
-	c: 0,
-	d: 0
+	jos: 0,
+	ko: 0
 };
 
 app.use(express.static('./public'));
